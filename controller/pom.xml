@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.seg</groupId>
+		<artifactId>services-seg</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	
+	<artifactId>controller</artifactId>	
+	<name>controller</name>
+	<description>Resource controller</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>				
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>			
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>						
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>			
+		</dependency>
+
+	  	<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.27</version>
+			<scope>test</scope>				
+		</dependency> 
+
+		<dependency>
+			<groupId>com.seg</groupId>
+			<artifactId>configuration</artifactId>
+			<version>${project.version}</version>			
+		</dependency>
+
+		<dependency>
+			<groupId>com.seg</groupId>
+			<artifactId>domain</artifactId>
+			<version>${project.version}</version>			
+		</dependency>
+
+		<dependency>
+			<groupId>com.seg</groupId>
+			<artifactId>repository</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>			
+		</dependency>
+
+		<dependency>
+			<groupId>com.seg</groupId>
+			<artifactId>security</artifactId>
+			<version>${project.version}</version>			
+		</dependency>
+
+		<dependency>
+			<groupId>com.seg</groupId>
+			<artifactId>service-api</artifactId>			
+			<version>${project.version}</version>			
+		</dependency>	
+	</dependencies>
+
+</project>
