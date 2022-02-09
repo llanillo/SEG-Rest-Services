@@ -6,14 +6,15 @@ Currently in development
 
 ## Overview
 
-Java / Maven / Spring Boot application which provides RESTful services with JWT security. It was the designed backend to manage the team document's for this [project](https://github.com/llanillo/AppSeg).
+Java / Spring Boot application which provides RESTful services with JWT security. It was the designed backend to manage the team information/document's from this [desktop app](https://github.com/llanillo/SEG-UNT-JavaFx-Client). It can be used for future development of websites or applications related to the project
 
 
 ### Enviorement Setup
 
-Minimal requirements: Please make sure following software is installed on your PC.
+To be able to execute any Spring or Maven command from your IDE. Please make sure following software is installed:
 
-* [Maven](https://maven.apache.org/) (installed and configured)
+* Spring plugin support for your IDE
+* Maven plugin support for your IDE
 
 ## Technologies
 
@@ -21,9 +22,9 @@ Minimal requirements: Please make sure following software is installed on your P
 * Spring MVC
 * Spring Security
 * Produce JSON output
-* Build: Maven
-* Database: MySQL
-* [Lombok](https://github.com/projectlombok/lombok) to avoid boiler plate
+* Maven
+* MySQL
+* [Lombok](https://github.com/projectlombok/lombok)
 * [Model mapper](https://github.com/modelmapper/modelmapper)
 * [Java JWT](https://github.com/auth0/java-jwt)
 
@@ -45,6 +46,8 @@ Use Spring boot plugin:
 mvn clean spring-boot:run
 ```
 Access the deployed web application at: [http://localhost:8080/](http://localhost:8080/)
+
 ## Test
 
-1. Enter the /test url
+1. Enter to /test url
+
