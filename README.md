@@ -8,14 +8,6 @@ Currently in development
 
 Java / Spring Boot application which provides RESTful services with JWT security. It was the designed backend to manage the team information/document's from this [desktop app](https://github.com/llanillo/SEG-UNT-JavaFx-Client). It can be used for future development of websites or applications related to the project
 
-
-### Environment Setup
-
-To be able to execute any Spring or Maven command from your IDE. Please make sure following software is installed:
-
-* Spring plugin support
-* Maven plugin support
-
 ## Technologies
 
 * Spring Data JPA
@@ -27,6 +19,15 @@ To be able to execute any Spring or Maven command from your IDE. Please make sur
 * [Lombok](https://github.com/projectlombok/lombok)
 * [Model mapper](https://github.com/modelmapper/modelmapper)
 * [Java JWT](https://github.com/auth0/java-jwt)
+
+## Environment Setup
+
+To be able to execute any Spring or Maven command from your IDE. Please make sure following software is installed:
+
+* Spring plugin support
+* Maven plugin support
+* Lombok plugin support
+
 
 ### To run the application
 
