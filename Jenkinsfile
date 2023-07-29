@@ -17,8 +17,7 @@ pipeline {
                         sh 'ls -f'
                     }
 
-                    dir('otro'){
-                        sh 'pwd'
+                    dir("${WORKSPACE}/Root/otro"){
                         sh 'ls -f'
                     }
                 }
