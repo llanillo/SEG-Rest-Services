@@ -12,14 +12,14 @@ pipeline {
             steps{
                 script {
                     dir('Root'){
-                        checkout scmGit(branches: [[name: '*/master']], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'test']], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/llanillo/SEG-UNT-Rest-Services']])
+                        checkout scmGit(branches: [[name: '*/master']], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'otro']], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/llanillo/SEG-UNT-Rest-Services']])
 
-                        sh 'ls'
+                        sh 'ls -f'
                     }
 
-                    dir('test'){
+                    dir('otro'){
                         sh 'pwd'
-                        sh 'ls'
+                        sh 'ls -f'
                     }
                 }
             }
