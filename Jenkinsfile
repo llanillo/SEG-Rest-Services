@@ -7,8 +7,10 @@ pipeline {
         stage('Test') {
             steps{
                 script {
+                    checkout scm
                     sh 'ls -f'
                     sh 'cd ..'
+                    sh 'ls -f'
                     sh 'pwd'
                 }
             }
