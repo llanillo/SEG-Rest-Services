@@ -17,7 +17,7 @@ pipeline {
                         sh 'ls'
                     }
 
-                    sh 'cd ./test'
+                    sh 'cd test/'
                     sh 'pwd'
                     sh 'ls'
                 }
