@@ -14,13 +14,12 @@ pipeline {
                     dir('Root'){
                         checkout scmGit(branches: [[name: '*/master']], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'test']], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/llanillo/SEG-UNT-Rest-Services']])
 
-                        sh 'pwd'
-                        sh 'ls -f'
+                        sh 'ls'
                     }
 
-                    sh 'cd ..'
+                    sh 'cd ./test'
                     sh 'pwd'
-                    sh 'ls -f'
+                    sh 'ls'
                 }
             }
         }
