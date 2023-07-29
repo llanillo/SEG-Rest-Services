@@ -1,5 +1,3 @@
-
-#!groovy
 // -noinspection GroovyAssignabilityCheck
 
 pipeline {
